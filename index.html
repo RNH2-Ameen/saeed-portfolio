@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +8,6 @@
 <meta name="keywords" content="Muhammed Saeed PM, Travel and Tourism, Business Development, Guest Relations, MTTM, BTTM, Tourism Management, Kozhikode">
 <meta name="author" content="Muhammed Saeed PM">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://example.com/muhammed-saeed-pm">
-
-<!-- Open Graph -->
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Muhammed Saeed PM | Travel & Tourism Specialist">
-<meta property="og:description" content="Bridging corporate growth and exceptional global hospitality. Master of Tourism graduate experienced in travel operations, client acquisition, and premium guest relations.">
-<!-- <meta property="og:image" content="INSERT-OG-IMAGE-URL-HERE"> -->
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,10 +24,11 @@
     theme: {
       extend: {
         colors: {
-          midnight: '#0f172a',
+          pitch: '#000000',
+          midnight: '#080c17',
           royal: '#1e3a8a',
-          sunset: '#db2777',
           gold: '#f59e0b',
+          amber: '#d97706',
           skycyan: '#38bdf8',
           soft: '#f8fafc'
         },
@@ -49,35 +42,13 @@
   }
 </script>
 
-<!-- JSON-LD structured data for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Muhammed Saeed PM",
-  "jobTitle": "Travel & Tourism Specialist | Business Development & Guest Relations",
-  "email": "mailto:sdmuhammed03@gmail.com",
-  "telephone": "+91-8590589632",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Thamarassery, Kozhikode",
-    "addressRegion": "Kerala",
-    "addressCountry": "IN"
-  },
-  "sameAs": ["https://www.linkedin.com/in/muhammed-saeed-27885a271"],
-  "alumniOf": [
-    "Govinda Pai Memorial Govt. College, Manjeshwaram",
-    "Oriental School of Hotel Management, Lakkidi, Wayanad"
-  ]
-}
-</script>
-
 <style>
   html { scroll-behavior: smooth; }
 
+  /* New Pitch Black to Deep Midnight Gradient */
   body {
     font-family: 'Manrope', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a, #db2777);
+    background: linear-gradient(135deg, #000000, #080c17, #0f172a);
     background-attachment: fixed;
     min-height: 100vh;
     color: #f8fafc;
@@ -87,38 +58,36 @@
   .font-display { font-family: 'Fraunces', serif; }
   .font-mono { font-family: 'Space Mono', monospace; }
 
-  /* Skip link */
   .skip-link {
-    position: absolute; left: -999px; top: 0; background:#0f172a; color:#fff; padding:.6rem 1rem; z-index:100;
+    position: absolute; left: -999px; top: 0; background:#000000; color:#f59e0b; padding:.6rem 1rem; z-index:100;
   }
   .skip-link:focus { left: 0; }
 
-  /* Focus visibility */
   a:focus-visible, button:focus-visible {
     outline: 2px solid #38bdf8; outline-offset: 3px; border-radius: 4px;
   }
 
-  /* Glass surface */
+  /* Optimized Glass Effect for Darker Background */
   .glass {
-    background: rgba(255, 255, 255, 0.07);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .glass-strong {
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(22px);
-    -webkit-backdrop-filter: blur(22px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  /* Drifting ambient glow orbs */
+  /* Dimmed Ambient Glows (Removed Pink) */
   .glow {
     position: absolute;
     border-radius: 50%;
-    filter: blur(70px);
-    opacity: 0.35;
+    filter: blur(80px);
+    opacity: 0.15;
     pointer-events: none;
     z-index: 0;
   }
@@ -127,82 +96,57 @@
   .glow-a { animation: driftA 18s ease-in-out infinite; }
   .glow-b { animation: driftB 22s ease-in-out infinite; }
 
-  /* Reveal-on-scroll */
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
   .reveal.show { opacity: 1; transform: translateY(0); }
 
-  /* Boarding-pass ticket strip */
   .perforation {
     position: relative;
-    border-top: 2px dashed rgba(255,255,255,0.30);
+    border-top: 2px dashed rgba(255,255,255,0.20);
     margin: 0 1.25rem;
   }
   .perforation::before, .perforation::after {
     content: '';
-    position: absolute;
-    top: -9px;
-    width: 16px; height: 16px;
-    border-radius: 50%;
-    border: 2px dashed rgba(255,255,255,0.35);
-    background: rgba(15,23,42,0.25);
+    position: absolute; top: -9px; width: 16px; height: 16px;
+    border-radius: 50%; border: 2px dashed rgba(255,255,255,0.25); background: #000000;
   }
   .perforation::before { left: -28px; }
   .perforation::after { right: -28px; }
 
-  /* Timeline rail */
   .rail::before {
-    content: '';
-    position: absolute;
-    left: 19px;
-    top: 4px;
-    bottom: 4px;
-    width: 0;
-    border-left: 2px dashed rgba(255,255,255,0.30);
+    content: ''; position: absolute; left: 19px; top: 4px; bottom: 4px; width: 0;
+    border-left: 2px dashed rgba(255,255,255,0.20);
   }
-  @media (min-width: 768px) {
-    .rail::before { left: 23px; }
-  }
-
-  .rail-node {
-    position: relative;
-    z-index: 1;
-  }
+  @media (min-width: 768px) { .rail::before { left: 23px; } }
+  .rail-node { position: relative; z-index: 1; }
 
   @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
   .float-icon { animation: floaty 3.2s ease-in-out infinite; }
 
-  /* Passport stamp */
-  .stamp {
-    transform: rotate(-7deg);
-    transition: transform .4s ease;
-  }
+  .stamp { transform: rotate(-7deg); transition: transform .4s ease; }
   .stamp:hover { transform: rotate(-2deg) scale(1.03); }
 
-  /* Nav link underline */
   .nav-link { position: relative; }
   .nav-link::after {
-    content:'';
-    position:absolute; left:0; bottom:-6px; height:1.5px; width:0;
-    background: #f59e0b;
-    transition: width .3s ease;
+    content:''; position:absolute; left:0; bottom:-6px; height:1.5px; width:0;
+    background: #38bdf8; transition: width .3s ease;
   }
   .nav-link:hover::after { width: 100%; }
 
-  /* Buttons */
+  /* Replaced Pink Gradient with Executive Gold/Amber */
   .btn-primary {
-    background: linear-gradient(135deg, #f59e0b, #db2777);
-    box-shadow: 0 8px 24px -8px rgba(245,158,11,0.55);
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 8px 24px -8px rgba(245,158,11,0.4);
+    color: #000000;
     transition: transform .25s ease, box-shadow .25s ease;
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -8px rgba(245,158,11,0.7); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -8px rgba(245,158,11,0.6); }
 
   .btn-ghost { transition: transform .25s ease, background .25s ease; }
-  .btn-ghost:hover { transform: translateY(-2px); background: rgba(255,255,255,0.14); }
+  .btn-ghost:hover { transform: translateY(-2px); background: rgba(255,255,255,0.08); }
 
   .card-hover { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
-  .card-hover:hover { transform: translateY(-6px); border-color: rgba(56,189,248,0.45); box-shadow: 0 20px 40px -16px rgba(0,0,0,0.45); }
+  .card-hover:hover { transform: translateY(-6px); border-color: rgba(56,189,248,0.3); box-shadow: 0 20px 40px -16px rgba(0,0,0,0.6); }
 
-  /* Mobile menu */
   #mobileMenu { transition: max-height .35s ease, opacity .35s ease; }
 
   @media (prefers-reduced-motion: reduce) {
@@ -216,9 +160,9 @@
 
 <a href="#main" class="skip-link">Skip to content</a>
 
-<!-- Ambient background glows -->
-<div class="glow glow-a w-[420px] h-[420px] bg-skycyan top-10 left-[-100px]" aria-hidden="true"></div>
-<div class="glow glow-b w-[480px] h-[480px] bg-sunset top-[60%] right-[-140px]" aria-hidden="true"></div>
+<!-- Redesigned Ambient background glows -->
+<div class="glow glow-a w-[420px] h-[420px] bg-royal top-10 left-[-100px]" aria-hidden="true"></div>
+<div class="glow glow-b w-[480px] h-[480px] bg-skycyan top-[60%] right-[-140px]" aria-hidden="true"></div>
 <div class="glow glow-a w-[340px] h-[340px] bg-gold bottom-0 left-[20%]" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
@@ -238,7 +182,7 @@
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
 
-    <a href="#contact" class="hidden md:inline-flex btn-primary text-midnight font-semibold text-sm px-5 py-2.5 rounded-full">
+    <a href="#contact" class="hidden md:inline-flex btn-primary font-semibold text-sm px-5 py-2.5 rounded-full">
       Get In Touch
     </a>
 
@@ -249,12 +193,12 @@
 
   <div id="mobileMenu" class="md:hidden overflow-hidden max-h-0 opacity-0 px-5">
     <ul class="glass-strong rounded-2xl mt-2 mb-3 p-5 flex flex-col gap-4 font-mono text-xs tracking-widest uppercase">
-      <li><a href="#home" class="mobile-link block">Home</a></li>
-      <li><a href="#expertise" class="mobile-link block">Expertise</a></li>
-      <li><a href="#experience" class="mobile-link block">Experience</a></li>
-      <li><a href="#projects" class="mobile-link block">Projects</a></li>
-      <li><a href="#education" class="mobile-link block">Education</a></li>
-      <li><a href="#contact" class="mobile-link block">Contact</a></li>
+      <li><a href="#home" class="mobile-link block hover:text-skycyan transition-colors">Home</a></li>
+      <li><a href="#expertise" class="mobile-link block hover:text-skycyan transition-colors">Expertise</a></li>
+      <li><a href="#experience" class="mobile-link block hover:text-skycyan transition-colors">Experience</a></li>
+      <li><a href="#projects" class="mobile-link block hover:text-skycyan transition-colors">Projects</a></li>
+      <li><a href="#education" class="mobile-link block hover:text-skycyan transition-colors">Education</a></li>
+      <li><a href="#contact" class="mobile-link block hover:text-skycyan transition-colors">Contact</a></li>
     </ul>
   </div>
 </header>
@@ -267,7 +211,7 @@
       <div class="grid md:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
 
         <div class="reveal">
-          <span class="inline-flex items-center gap-2 font-mono text-[11px] sm:text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full glass text-skycyan">
+          <span class="inline-flex items-center gap-2 font-mono text-[11px] sm:text-xs tracking-[0.2em] uppercase px-4 py-2 rounded-full glass border-skycyan/30 text-skycyan">
             <i class="fa-solid fa-globe"></i> Travel &amp; Tourism Specialist
           </span>
 
@@ -279,12 +223,12 @@
             Business Development &amp; Guest Relations
           </p>
 
-          <p class="mt-5 max-w-xl text-soft/90 text-base sm:text-lg leading-relaxed">
+          <p class="mt-5 max-w-xl text-soft/80 text-base sm:text-lg leading-relaxed">
             Bridging the gap between corporate growth and exceptional global hospitality. A Master of Tourism graduate experienced in travel operations, client acquisition, and premium guest relations.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#" download class="btn-primary text-midnight font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full inline-flex items-center gap-2">
+            <a href="#" download class="btn-primary font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full inline-flex items-center gap-2">
               <i class="fa-solid fa-download"></i> Download Resume
             </a>
             <a href="#contact" class="btn-ghost glass text-white font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full inline-flex items-center gap-2">
@@ -295,35 +239,36 @@
 
         <div class="reveal flex justify-center md:justify-end">
           <div class="relative">
-            <div class="absolute -inset-3 rounded-full border-2 border-dashed border-gold/40"></div>
-            <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-full glass-strong flex items-center justify-center overflow-hidden">
+            <div class="absolute -inset-3 rounded-full border-2 border-dashed border-skycyan/30"></div>
+            <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-full glass-strong border-white/10 flex items-center justify-center overflow-hidden relative z-10 bg-midnight">
               <!-- INSERT SAEED PHOTO HERE -->
               <!-- Replace the <i> placeholder below with: <img src="your-photo.jpg" alt="Muhammed Saeed PM" class="w-full h-full object-cover"> -->
-              <i class="fa-solid fa-user text-7xl text-white/40"></i>
+              <i class="fa-solid fa-user text-7xl text-white/20"></i>
             </div>
-            <span class="absolute -bottom-2 -right-2 glass-strong rounded-full px-4 py-2 font-mono text-[11px] tracking-widest uppercase text-skycyan flex items-center gap-1">
-              <i class="fa-solid fa-circle-check text-gold"></i> Available
+            <span class="absolute -bottom-2 -right-2 glass-strong rounded-full px-4 py-2 font-mono text-[11px] tracking-widest uppercase text-white flex items-center gap-2 z-20 shadow-xl">
+              <span class="w-2 h-2 rounded-full bg-skycyan animate-pulse"></span> Available
             </span>
           </div>
         </div>
       </div>
 
       <!-- Boarding pass strip -->
-      <div class="reveal glass-strong rounded-3xl mt-14 px-6 sm:px-10 py-7 grid sm:grid-cols-4 gap-6 sm:gap-4 relative">
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/60">From</p>
+      <div class="reveal glass-strong rounded-3xl mt-14 px-6 sm:px-10 py-7 grid sm:grid-cols-4 gap-6 sm:gap-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-skycyan/5 to-transparent"></div>
+        <div class="relative">
+          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">From</p>
           <p class="font-display text-xl text-white mt-1">Kozhikode <span class="text-skycyan text-sm font-mono">CCJ</span></p>
         </div>
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/60">To</p>
+        <div class="relative">
+          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">To</p>
           <p class="font-display text-xl text-white mt-1">Global Hospitality</p>
         </div>
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/60">Class</p>
+        <div class="relative">
+          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">Class</p>
           <p class="font-display text-xl text-white mt-1">Business Dev.</p>
         </div>
-        <div>
-          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/60">Boarding</p>
+        <div class="relative">
+          <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">Boarding</p>
           <p class="font-display text-xl text-gold mt-1">Now</p>
         </div>
         <div class="perforation sm:hidden col-span-full"></div>
@@ -332,49 +277,49 @@
   </section>
 
   <!-- CORE EXPERTISE -->
-  <section id="expertise" class="relative px-5 sm:px-8 py-24">
+  <section id="expertise" class="relative px-5 sm:px-8 py-24 border-t border-white/5">
     <div class="max-w-7xl mx-auto">
       <div class="reveal text-center max-w-2xl mx-auto mb-14">
         <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Core Expertise</span>
         <h2 class="font-display text-3xl sm:text-4xl font-semibold text-white mt-3">Skills &amp; Digital Toolkit</h2>
-        <p class="text-soft/75 mt-3">A blend of tourism management know-how and the digital tools that power modern hospitality operations.</p>
+        <p class="text-soft/60 mt-3">A blend of tourism management know-how and the digital tools that power modern hospitality operations.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="reveal glass card-hover rounded-2xl p-7">
-          <div class="w-12 h-12 rounded-xl bg-skycyan/15 flex items-center justify-center mb-5">
+          <div class="w-12 h-12 rounded-xl bg-skycyan/10 border border-skycyan/20 flex items-center justify-center mb-5">
             <i class="fa-solid fa-suitcase-rolling text-skycyan text-xl"></i>
           </div>
           <h3 class="font-display text-xl text-white mb-4">Industry Skills</h3>
-          <ul class="space-y-3 text-soft/85 text-sm">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-map-location-dot text-gold w-4"></i> Tourism Management</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-concierge-bell text-gold w-4"></i> Guest Relations &amp; Hospitality Support</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-gold w-4"></i> Sales &amp; Digital Marketing</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-handshake text-gold w-4"></i> Customer Relationship Management (CRM)</li>
+          <ul class="space-y-3 text-soft/75 text-sm">
+            <li class="flex items-center gap-3"><i class="fa-solid fa-map-location-dot text-gold/80 w-4"></i> Tourism Management</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-concierge-bell text-gold/80 w-4"></i> Guest Relations</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-chart-line text-gold/80 w-4"></i> Sales &amp; Marketing</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-handshake text-gold/80 w-4"></i> Corporate CRM</li>
           </ul>
         </div>
 
         <div class="reveal glass card-hover rounded-2xl p-7">
-          <div class="w-12 h-12 rounded-xl bg-gold/15 flex items-center justify-center mb-5">
+          <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center mb-5">
             <i class="fa-solid fa-laptop-code text-gold text-xl"></i>
           </div>
           <h3 class="font-display text-xl text-white mb-4">Digital Competencies</h3>
-          <ul class="space-y-3 text-soft/85 text-sm">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-hotel text-skycyan w-4"></i> IDS Next (Hotel PMS)</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-file-invoice-dollar text-skycyan w-4"></i> Vyapar Billing Software</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-file-word text-skycyan w-4"></i> Microsoft Office (Word, Excel)</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-palette text-skycyan w-4"></i> Canva &amp; CapCut Video Editing</li>
+          <ul class="space-y-3 text-soft/75 text-sm">
+            <li class="flex items-center gap-3"><i class="fa-solid fa-hotel text-skycyan/80 w-4"></i> IDS Next (Hotel PMS)</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-file-invoice-dollar text-skycyan/80 w-4"></i> Vyapar Billing</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-file-word text-skycyan/80 w-4"></i> MS Office Suite</li>
+            <li class="flex items-center gap-3"><i class="fa-solid fa-palette text-skycyan/80 w-4"></i> Canva &amp; CapCut</li>
           </ul>
         </div>
 
         <div class="reveal glass card-hover rounded-2xl p-7">
-          <div class="w-12 h-12 rounded-xl bg-sunset/20 flex items-center justify-center mb-5">
-            <i class="fa-solid fa-language text-sunset text-xl"></i>
+          <div class="w-12 h-12 rounded-xl bg-royal/40 border border-royal flex items-center justify-center mb-5">
+            <i class="fa-solid fa-language text-skycyan text-xl"></i>
           </div>
           <h3 class="font-display text-xl text-white mb-4">Languages</h3>
-          <ul class="space-y-3 text-soft/85 text-sm">
-            <li class="flex items-center justify-between"><span class="flex items-center gap-2"><i class="fa-solid fa-comments text-gold w-4"></i> Malayalam</span><span class="font-mono text-[11px] text-skycyan uppercase">Native</span></li>
-            <li class="flex items-center justify-between"><span class="flex items-center gap-2"><i class="fa-solid fa-comments text-gold w-4"></i> English</span><span class="font-mono text-[11px] text-skycyan uppercase">Professional</span></li>
+          <ul class="space-y-4 text-soft/75 text-sm">
+            <li class="flex items-center justify-between border-b border-white/5 pb-2"><span class="flex items-center gap-3"><i class="fa-regular fa-comment-dots text-gold/80 w-4"></i> Malayalam</span><span class="font-mono text-[10px] text-skycyan uppercase border border-skycyan/30 px-2 py-0.5 rounded">Native</span></li>
+            <li class="flex items-center justify-between border-b border-white/5 pb-2"><span class="flex items-center gap-3"><i class="fa-regular fa-comment-dots text-gold/80 w-4"></i> English</span><span class="font-mono text-[10px] text-skycyan uppercase border border-skycyan/30 px-2 py-0.5 rounded">Professional</span></li>
           </ul>
         </div>
       </div>
@@ -382,12 +327,12 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="relative px-5 sm:px-8 py-24">
+  <section id="experience" class="relative px-5 sm:px-8 py-24 border-t border-white/5">
     <div class="max-w-5xl mx-auto">
       <div class="reveal text-center max-w-2xl mx-auto mb-16">
         <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Itinerary</span>
         <h2 class="font-display text-3xl sm:text-4xl font-semibold text-white mt-3">Experience</h2>
-        <p class="text-soft/75 mt-3">A journey from hands-on hospitality training to driving business growth across borders.</p>
+        <p class="text-soft/60 mt-3">A journey from hands-on hospitality training to driving business growth across borders.</p>
       </div>
 
       <!-- Internship Experience -->
@@ -397,32 +342,31 @@
       </div>
 
       <div class="relative rail pl-12 md:pl-14 mb-16">
-
-        <div class="reveal rail-node relative mb-10">
-          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full glass-strong flex items-center justify-center text-skycyan">
-            <i class="fa-solid fa-route"></i>
+        <div class="reveal rail-node relative mb-8">
+          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full bg-midnight border border-skycyan/40 shadow-[0_0_15px_rgba(56,189,248,0.2)] flex items-center justify-center text-skycyan">
+            <i class="fa-solid fa-route text-sm"></i>
           </span>
-          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-skycyan/60">
+          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-l-skycyan/60">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
               <h4 class="font-display text-lg sm:text-xl text-white">Travel Agency Intern</h4>
-              <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan">Apr 2026 – May 2026</span>
+              <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan bg-skycyan/10 px-3 py-1 rounded-full">Apr 2026 – May 2026</span>
             </div>
-            <p class="text-soft/70 text-sm mb-3">Al Hind Tours and Travels &middot; Thamarassery, Kozhikode</p>
-            <p class="text-soft/85 text-sm leading-relaxed">Coordinated travel itineraries, resolved customer inquiries, and managed critical documentation including passport and ticketing applications.</p>
+            <p class="text-soft/50 text-sm mb-4"><i class="fa-solid fa-building mr-1"></i> Al Hind Tours and Travels &middot; Kozhikode</p>
+            <p class="text-soft/80 text-sm leading-relaxed">Coordinated travel itineraries, resolved customer inquiries, and managed critical documentation including passport and ticketing applications.</p>
           </div>
         </div>
 
         <div class="reveal rail-node relative">
-          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full glass-strong flex items-center justify-center text-skycyan">
-            <i class="fa-solid fa-bell-concierge"></i>
+          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full bg-midnight border border-skycyan/40 shadow-[0_0_15px_rgba(56,189,248,0.2)] flex items-center justify-center text-skycyan">
+            <i class="fa-solid fa-bell-concierge text-sm"></i>
           </span>
-          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-skycyan/60">
+          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-l-skycyan/60">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
               <h4 class="font-display text-lg sm:text-xl text-white">Customer Service Intern</h4>
-              <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan">Jul 2022 – Aug 2022</span>
+              <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan bg-skycyan/10 px-3 py-1 rounded-full">Jul 2022 – Aug 2022</span>
             </div>
-            <p class="text-soft/70 text-sm mb-3">The Leaf Munnar Resort &middot; Idukki, Kerala</p>
-            <p class="text-soft/85 text-sm leading-relaxed">Delivered high-standard hospitality support, managed face-to-face guest interactions, and upheld luxury resort operational procedures.</p>
+            <p class="text-soft/50 text-sm mb-4"><i class="fa-solid fa-building mr-1"></i> The Leaf Munnar Resort &middot; Idukki</p>
+            <p class="text-soft/80 text-sm leading-relaxed">Delivered high-standard hospitality support, managed face-to-face guest interactions, and upheld luxury resort operational procedures.</p>
           </div>
         </div>
       </div>
@@ -434,32 +378,31 @@
       </div>
 
       <div class="relative rail pl-12 md:pl-14">
-
-        <div class="reveal rail-node relative mb-10">
-          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full glass-strong flex items-center justify-center text-gold">
-            <i class="fa-solid fa-chart-line"></i>
+        <div class="reveal rail-node relative mb-8">
+          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full bg-midnight border border-gold/40 shadow-[0_0_15px_rgba(245,158,11,0.2)] flex items-center justify-center text-gold">
+            <i class="fa-solid fa-chart-line text-sm"></i>
           </span>
-          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-gold/60">
+          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-l-gold/60">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
               <h4 class="font-display text-lg sm:text-xl text-white">Business Development Executive</h4>
-              <span class="font-mono text-[11px] tracking-widest uppercase text-gold">Apr 2023 – Aug 2024</span>
+              <span class="font-mono text-[11px] tracking-widest uppercase text-gold bg-gold/10 px-3 py-1 rounded-full">Apr 2023 – Aug 2024</span>
             </div>
-            <p class="text-soft/70 text-sm mb-3">Hogar Technologies and Innovations LLP &middot; Markaz Knowledge City, Calicut</p>
-            <p class="text-soft/85 text-sm leading-relaxed">Spearheaded local sales and marketing strategies, managed corporate CRM databases, handled billing reporting, and oversaw digital marketing efforts.</p>
+            <p class="text-soft/50 text-sm mb-4"><i class="fa-solid fa-building mr-1"></i> Hogar Technologies &middot; Calicut</p>
+            <p class="text-soft/80 text-sm leading-relaxed">Spearheaded local sales and marketing strategies, managed corporate CRM databases, handled billing reporting, and oversaw digital marketing efforts.</p>
           </div>
         </div>
 
         <div class="reveal rail-node relative">
-          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full glass-strong flex items-center justify-center text-gold">
-            <i class="fa-solid fa-earth-americas"></i>
+          <span class="absolute -left-12 md:-left-14 top-1 w-10 h-10 rounded-full bg-midnight border border-gold/40 shadow-[0_0_15px_rgba(245,158,11,0.2)] flex items-center justify-center text-gold">
+            <i class="fa-solid fa-earth-americas text-sm"></i>
           </span>
-          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-gold/60">
+          <div class="glass card-hover rounded-2xl p-6 sm:p-7 border-l-2 border-l-gold/60">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
-              <h4 class="font-display text-lg sm:text-xl text-white">Business Development Executive <span class="text-soft/60 text-sm font-body">(Part-Time / Remote)</span></h4>
-              <span class="font-mono text-[11px] tracking-widest uppercase text-gold">Jan 2026 – Present</span>
+              <h4 class="font-display text-lg sm:text-xl text-white">Business Development Executive <span class="text-soft/40 font-body text-sm font-normal">| Remote</span></h4>
+              <span class="font-mono text-[11px] tracking-widest uppercase text-gold bg-gold/10 px-3 py-1 rounded-full">Jan 2026 – Present</span>
             </div>
-            <p class="text-soft/70 text-sm mb-3">DevX Technologies &middot; Dubai, UAE</p>
-            <p class="text-soft/85 text-sm leading-relaxed">Managing international client follow-ups, driving remote digital sales initiatives, and maintaining client relationships across time zones.</p>
+            <p class="text-soft/50 text-sm mb-4"><i class="fa-solid fa-building mr-1"></i> DevX Technologies &middot; Dubai, UAE</p>
+            <p class="text-soft/80 text-sm leading-relaxed">Managing international client follow-ups, driving remote digital sales initiatives, and maintaining client relationships across time zones.</p>
           </div>
         </div>
       </div>
@@ -467,37 +410,39 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="relative px-5 sm:px-8 py-24">
+  <section id="projects" class="relative px-5 sm:px-8 py-24 border-t border-white/5">
     <div class="max-w-6xl mx-auto">
       <div class="reveal text-center max-w-2xl mx-auto mb-14">
         <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Research</span>
         <h2 class="font-display text-3xl sm:text-4xl font-semibold text-white mt-3">Academic Projects</h2>
-        <p class="text-soft/75 mt-3">Tourism research undertaken across postgraduate and undergraduate study.</p>
+        <p class="text-soft/60 mt-3">Tourism research undertaken across postgraduate and undergraduate study.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-7">
-        <div class="reveal glass card-hover rounded-2xl p-8 flex flex-col">
-          <div class="w-12 h-12 rounded-xl bg-skycyan/15 flex items-center justify-center mb-5">
+        <div class="reveal glass card-hover rounded-2xl p-8 flex flex-col relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-skycyan/5 rounded-bl-full"></div>
+          <div class="w-12 h-12 rounded-xl bg-skycyan/10 border border-skycyan/20 flex items-center justify-center mb-5 relative z-10">
             <i class="fa-solid fa-graduation-cap text-skycyan text-xl"></i>
           </div>
-          <span class="font-mono text-[11px] tracking-widest uppercase text-soft/50 mb-2">PG &middot; MTTM</span>
+          <span class="font-mono text-[10px] tracking-widest uppercase text-soft/40 mb-2">PG &middot; MTTM</span>
           <h3 class="font-display text-xl text-white mb-3">Postgraduate (PG) Tourism Project</h3>
           <!-- PASTE PG PROJECT DESCRIPTION HERE once provided by Saeed -->
-          <p class="text-soft/65 text-sm italic leading-relaxed flex-1">Project details coming soon. This space is reserved for a summary of Saeed's postgraduate tourism research and findings.</p>
-          <span class="mt-5 inline-flex items-center gap-2 font-mono text-[11px] tracking-widest uppercase text-gold">
+          <p class="text-soft/60 text-sm italic leading-relaxed flex-1">Project details coming soon. This space is reserved for a summary of Saeed's postgraduate tourism research and findings.</p>
+          <span class="mt-5 w-fit inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-gold bg-gold/10 px-3 py-1.5 rounded border border-gold/20">
             <i class="fa-solid fa-hourglass-half"></i> Details Pending
           </span>
         </div>
 
-        <div class="reveal glass card-hover rounded-2xl p-8 flex flex-col">
-          <div class="w-12 h-12 rounded-xl bg-gold/15 flex items-center justify-center mb-5">
+        <div class="reveal glass card-hover rounded-2xl p-8 flex flex-col relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-bl-full"></div>
+          <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center mb-5 relative z-10">
             <i class="fa-solid fa-route text-gold text-xl"></i>
           </div>
-          <span class="font-mono text-[11px] tracking-widest uppercase text-soft/50 mb-2">UG &middot; BTTM</span>
+          <span class="font-mono text-[10px] tracking-widest uppercase text-soft/40 mb-2">UG &middot; BTTM</span>
           <h3 class="font-display text-xl text-white mb-3">Undergraduate (UG) Tourism Project</h3>
           <!-- PASTE UG PROJECT DESCRIPTION HERE once provided by Saeed -->
-          <p class="text-soft/65 text-sm italic leading-relaxed flex-1">Project details coming soon. This space is reserved for a summary of Saeed's undergraduate tourism research and findings.</p>
-          <span class="mt-5 inline-flex items-center gap-2 font-mono text-[11px] tracking-widest uppercase text-gold">
+          <p class="text-soft/60 text-sm italic leading-relaxed flex-1">Project details coming soon. This space is reserved for a summary of Saeed's undergraduate tourism research and findings.</p>
+          <span class="mt-5 w-fit inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-gold bg-gold/10 px-3 py-1.5 rounded border border-gold/20">
             <i class="fa-solid fa-hourglass-half"></i> Details Pending
           </span>
         </div>
@@ -506,7 +451,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="relative px-5 sm:px-8 py-24">
+  <section id="education" class="relative px-5 sm:px-8 py-24 border-t border-white/5">
     <div class="max-w-5xl mx-auto">
       <div class="reveal text-center max-w-2xl mx-auto mb-14">
         <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Academics</span>
@@ -514,24 +459,28 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-7 mb-20">
-        <div class="reveal glass card-hover rounded-2xl p-8">
-          <div class="flex items-center gap-3 mb-4">
-            <i class="fa-solid fa-graduation-cap text-gold text-2xl"></i>
-            <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan">2024 – 2026</span>
+        <div class="reveal glass card-hover rounded-2xl p-8 border-t-2 border-t-skycyan/40">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-midnight border border-white/10 flex items-center justify-center shadow-lg">
+              <i class="fa-solid fa-building-columns text-skycyan"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-widest uppercase text-skycyan bg-skycyan/10 px-2 py-1 rounded">2024 – 2026</span>
           </div>
-          <h3 class="font-display text-xl text-white mb-2">Master of Tourism and Travel Management (MTTM)</h3>
-          <p class="text-soft/80 text-sm">Govinda Pai Memorial Govt. College, Manjeshwaram</p>
-          <p class="text-soft/55 text-xs mt-1">University of Kannur</p>
+          <h3 class="font-display text-xl text-white mb-3">Master of Tourism and Travel Management (MTTM)</h3>
+          <p class="text-soft/70 text-sm"><i class="fa-solid fa-location-dot text-soft/40 mr-1"></i> Govinda Pai Memorial Govt. College</p>
+          <p class="text-gold/80 text-xs mt-2 font-mono tracking-wide">UNIVERSITY OF KANNUR</p>
         </div>
 
-        <div class="reveal glass card-hover rounded-2xl p-8">
-          <div class="flex items-center gap-3 mb-4">
-            <i class="fa-solid fa-graduation-cap text-gold text-2xl"></i>
-            <span class="font-mono text-[11px] tracking-widest uppercase text-skycyan">2020 – 2023</span>
+        <div class="reveal glass card-hover rounded-2xl p-8 border-t-2 border-t-gold/40">
+          <div class="flex justify-between items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-midnight border border-white/10 flex items-center justify-center shadow-lg">
+              <i class="fa-solid fa-building-columns text-gold"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-widest uppercase text-gold bg-gold/10 px-2 py-1 rounded">2020 – 2023</span>
           </div>
-          <h3 class="font-display text-xl text-white mb-2">Bachelor of Travel and Tourism Management (BTTM)</h3>
-          <p class="text-soft/80 text-sm">Oriental School of Hotel Management, Lakkidi, Wayanad</p>
-          <p class="text-soft/55 text-xs mt-1">University of Calicut</p>
+          <h3 class="font-display text-xl text-white mb-3">Bachelor of Travel and Tourism Management (BTTM)</h3>
+          <p class="text-soft/70 text-sm"><i class="fa-solid fa-location-dot text-soft/40 mr-1"></i> Oriental School of Hotel Management</p>
+          <p class="text-gold/80 text-xs mt-2 font-mono tracking-wide">UNIVERSITY OF CALICUT</p>
         </div>
       </div>
 
@@ -542,12 +491,13 @@
       </div>
 
       <div class="flex justify-center">
-        <div class="reveal stamp w-52 h-52 rounded-full border-4 border-dashed border-gold/60 flex items-center justify-center text-center p-6 glass">
-          <div>
-            <i class="fa-solid fa-stamp text-gold text-2xl mb-2"></i>
-            <p class="font-mono text-[10px] tracking-widest uppercase text-gold">Certified &middot; 2018</p>
+        <div class="reveal stamp w-56 h-56 rounded-full border border-gold/30 bg-gold/5 flex items-center justify-center text-center p-6 relative">
+          <div class="absolute inset-2 rounded-full border-2 border-dashed border-gold/40"></div>
+          <div class="relative z-10">
+            <i class="fa-solid fa-certificate text-gold text-3xl mb-3"></i>
+            <p class="font-mono text-[10px] tracking-widest uppercase text-skycyan mb-1">Certified &middot; 2018</p>
             <p class="font-display text-base text-white mt-2 leading-snug">Microsoft Computer Operator Certificate</p>
-            <p class="text-soft/60 text-[11px] mt-2">DIIT, Kerala State Rutronix<br>Engapuzha, Kozhikode</p>
+            <p class="text-soft/50 text-[10px] mt-3">DIIT, Kerala State Rutronix<br>Engapuzha, Kozhikode</p>
           </div>
         </div>
       </div>
@@ -555,41 +505,44 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="relative px-5 sm:px-8 py-24">
+  <section id="contact" class="relative px-5 sm:px-8 py-24 border-t border-white/5">
     <div class="max-w-4xl mx-auto reveal">
-      <div class="glass-strong rounded-3xl p-9 sm:p-12 text-center">
-        <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Let's Connect</span>
-        <h2 class="font-display text-3xl sm:text-4xl font-semibold text-white mt-3 mb-3">Get In Touch</h2>
-        <p class="text-soft/75 max-w-xl mx-auto mb-10">Open to opportunities in travel operations, business development, and guest relations — locally or across borders.</p>
+      <div class="glass-strong rounded-3xl p-9 sm:p-12 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/80"></div>
+        <div class="relative z-10">
+          <span class="font-mono text-xs tracking-widest uppercase text-skycyan">Let's Connect</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-white mt-3 mb-3">Get In Touch</h2>
+          <p class="text-soft/60 max-w-xl mx-auto mb-10">Open to opportunities in travel operations, business development, and guest relations — locally or across borders.</p>
 
-        <div class="grid sm:grid-cols-3 gap-6 mb-10 text-left sm:text-center">
-          <a href="mailto:sdmuhammed03@gmail.com" class="glass card-hover rounded-xl p-5 flex sm:flex-col items-center gap-3 sm:gap-2">
-            <i class="fa-solid fa-envelope text-gold text-xl"></i>
-            <div>
-              <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">Email</p>
-              <p class="text-sm text-white break-all">sdmuhammed03@gmail.com</p>
-            </div>
-          </a>
-          <a href="tel:+918590589632" class="glass card-hover rounded-xl p-5 flex sm:flex-col items-center gap-3 sm:gap-2">
-            <i class="fa-solid fa-phone text-gold text-xl"></i>
-            <div>
-              <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">Phone</p>
-              <p class="text-sm text-white">+91 85905 89632</p>
-            </div>
-          </a>
-          <div class="glass rounded-xl p-5 flex sm:flex-col items-center gap-3 sm:gap-2">
-            <i class="fa-solid fa-map-pin text-gold text-xl"></i>
-            <div>
-              <p class="font-mono text-[10px] tracking-widest uppercase text-soft/50">Location</p>
-              <p class="text-sm text-white">Thamarassery, Kozhikode, Kerala</p>
+          <div class="grid sm:grid-cols-3 gap-5 mb-10 text-left sm:text-center">
+            <a href="mailto:sdmuhammed03@gmail.com" class="glass card-hover rounded-xl p-5 flex sm:flex-col items-center gap-4 sm:gap-3 border-white/5 bg-black/20">
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="font-mono text-[10px] tracking-widest uppercase text-soft/40">Email</p>
+                <p class="text-sm text-white break-all mt-1">sdmuhammed03@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+918590589632" class="glass card-hover rounded-xl p-5 flex sm:flex-col items-center gap-4 sm:gap-3 border-white/5 bg-black/20">
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <p class="font-mono text-[10px] tracking-widest uppercase text-soft/40">Phone</p>
+                <p class="text-sm text-white mt-1">+91 85905 89632</p>
+              </div>
+            </a>
+            <div class="glass rounded-xl p-5 flex sm:flex-col items-center gap-4 sm:gap-3 border-white/5 bg-black/20">
+              <div class="w-10 h-10 rounded-full bg-skycyan/10 flex items-center justify-center text-skycyan"><i class="fa-solid fa-map-pin"></i></div>
+              <div>
+                <p class="font-mono text-[10px] tracking-widest uppercase text-soft/40">Location</p>
+                <p class="text-sm text-white mt-1">Kozhikode, Kerala</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <a href="https://www.linkedin.com/in/muhammed-saeed-27885a271" target="_blank" rel="noopener noreferrer"
-           class="btn-primary inline-flex items-center gap-2 text-midnight font-semibold px-8 py-3.5 rounded-full">
-          <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
-        </a>
+          <a href="https://www.linkedin.com/in/muhammed-saeed-27885a271" target="_blank" rel="noopener noreferrer"
+             class="btn-primary inline-flex items-center gap-2 text-midnight font-semibold px-8 py-3.5 rounded-full">
+            <i class="fa-brands fa-linkedin text-lg"></i> Connect on LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -597,33 +550,34 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="relative px-5 sm:px-8 py-10 border-t border-white/10">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-soft/60 text-sm">
-    <p class="flex items-center gap-2"><i class="fa-solid fa-plane-departure text-gold"></i> Muhammed Saeed PM &middot; Travel &amp; Tourism Specialist</p>
-    <div class="flex items-center gap-5 text-lg">
+<footer class="relative px-5 sm:px-8 py-10 border-t border-white/5 bg-black/40">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-soft/50 text-xs font-mono">
+    <p class="flex items-center gap-2 tracking-wide"><i class="fa-solid fa-plane-departure text-gold"></i> MUHAMMED SAEED PM</p>
+    <div class="flex items-center gap-6 text-lg">
       <a href="mailto:sdmuhammed03@gmail.com" aria-label="Email Muhammed Saeed PM" class="hover:text-skycyan transition-colors"><i class="fa-solid fa-envelope"></i></a>
       <a href="tel:+918590589632" aria-label="Call Muhammed Saeed PM" class="hover:text-skycyan transition-colors"><i class="fa-solid fa-phone"></i></a>
       <a href="https://www.linkedin.com/in/muhammed-saeed-27885a271" target="_blank" rel="noopener noreferrer" aria-label="Muhammed Saeed PM on LinkedIn" class="hover:text-skycyan transition-colors"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-    <p>&copy; <span id="year"></span> All rights reserved.</p>
+    <p class="tracking-wide">&copy; <span id="year"></span> ALL RIGHTS RESERVED</p>
   </div>
 </footer>
 
 <script>
-  // Year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Navbar background on scroll
   const nav = document.getElementById('siteNav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
       nav.classList.add('glass-strong');
+      nav.classList.add('border-b');
+      nav.classList.add('border-white/5');
     } else {
       nav.classList.remove('glass-strong');
+      nav.classList.remove('border-b');
+      nav.classList.remove('border-white/5');
     }
   });
 
-  // Mobile menu toggle
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   let menuOpen = false;
@@ -649,7 +603,6 @@
     });
   });
 
-  // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
